@@ -3,7 +3,7 @@ require 'dnsruby'
 require 'resolv-replace'
 include Dnsruby
 
-class DNSHelper
+class BindDocker
 
   IMAGE='clcloud/dnsuats'
   CONTAINER_NAME='dns-funtime'
@@ -47,7 +47,7 @@ end
 
 class Resolv
   def self.use_uat_dns! default_search='uat-os'
-    resolv = Resolv::DNS.new(nameserver_port:[[DNSHelper.docker_ip, 1053]],
+    resolv = Resolv::DNS.new(nameserver_port:[[BindDocker.docker_ip, 1053]],
                              search: [default_search],
                              ndots: 1)
 

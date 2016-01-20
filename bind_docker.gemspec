@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'bind_docker'
-  s.version     = '0.1.0'
+  s.version     = '0.3.0'
   s.date        = '2016-01-20'
   s.summary     = "Build Docker containers running Bind9"
   s.description = "Gem to create a docker container running bind9, used with rpsec for UATs"
