@@ -51,9 +51,9 @@ class BindDocker
     File.open(tmp_dir + "/Dockerfile", 'w') do |file|
       file.write(docker_preamble)
       @@zonefiles.each do |zonefile|
-        file.write("COPY #{filename(zonefile)} /var/cache/bind/#{filename(zonefile)}")
+        file.write("COPY #{filename(zonefile)} /var/cache/bind/#{filename(zonefile)}\n")
       end
-      file.write("COPY #{filename(@@named_conf)} /etc/bind/#{filename(@@named_conf)}")
+      file.write("COPY #{filename(@@named_conf)} /etc/bind/#{filename(@@named_conf)}\n")
       file.close
     end
   end
