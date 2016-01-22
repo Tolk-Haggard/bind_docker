@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dnsruby (1.59.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dnsruby
+
+BUNDLED WITH
+   1.10.6
