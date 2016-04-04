@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name        = 'bind_docker'
-  s.version     = '0.6.0'
-  s.date        = '2016-01-22'
+  s.version     = '0.7.0'
+  s.date        = '2016-04-04'
   s.summary     = "Build Docker containers running Bind9"
   s.description = "Gem to create a docker container running bind9, used with rpsec for UATs"
-  s.authors     = ["Brian Haggard", "Brian Felton", "Rebecca Skinner", "Dan Schwabe", "Mike Beyer"]
+  s.authors     = ["Brian Haggard", "Brian Felton", "Rebecca Skinner", "Mike Beyer", "Dan Schwabe", "Joshua Weaver"]
   s.email       = 'brihagg@gmail.com'
   s.files       = ["lib/bind_docker.rb"]
   s.homepage    = 'http://rubygems.org/gems/bind_docker'

@@ -83,8 +83,7 @@ CMD ["/usr/sbin/named", "-g", "-c", "/etc/bind/named.conf"]
 
   def self.docker_ip
     if (/darwin/ =~ RUBY_PLATFORM)
-      docker_machine_info = JSON.parse `docker-machine inspect default`
-      docker_machine_info['Driver']['IPAddress']
+      `docker-machine ip default`.strip
     else
       "127.0.0.1"
     end
